@@ -1,0 +1,146 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+    "vsicons.dontShowNewVersionMessage": true,
+    "editor.minimap.enabled": false,
+    "files.autoSave": "afterDelay",
+    "workbench.editor.wrapTabs": true,
+    "editor.wordWrap": "on",
+    "workbench.editor.limit.value": 15,
+    "workbench.editor.limit.enabled": true,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "files.exclude": {
+        "**/.git": false
+    },
+    "files.associations": {
+        "*.ic": "cpp"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.hlsearch": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+      {
+        "before": ["<leader>", "n"],
+        "commands": [
+            "workbench.action.nextEditor"
+        ]
+      },
+      {
+        "before": ["<leader>", "p"],
+        "commands": [
+            "workbench.action.previousEditor"
+        ]
+      },
+      {
+        "before": ["<leader>", "f", "f"],
+        "commands": [
+            "workbench.action.quickOpen"
+        ]
+      },
+      {
+        "before": ["<leader>", "f", "g"],
+        "commands": [
+            "workbench.view.search"
+        ]
+      },
+      {
+        "before": ["<leader>", "r", "n"],
+        "commands": [
+            "editor.action.rename"
+        ]
+      },
+      {
+        "before": ["<leader>", "g", "y"],
+        "commands": [
+            "gitlens.copyRemoteFileUrlToClipboard"
+        ]
+      },
+      {
+        "before": ["g", "r"],
+        "commands": [
+            "references-view.findReferences"
+        ]
+      },
+      {
+        "before": ["K"],
+        "commands": [
+            "editor.action.showHover"
+        ]
+      },
+      {
+        "before": ["J"],
+        "after": ["C-d"],
+        "silent": true
+      },
+      {
+        "before": ["H"],
+        "after": ["^"],
+        "silent": true
+      },
+      {
+        "before": ["L"],
+        "after": ["$"],
+        "silent": true
+      }
+    ],
+    "vim.leader": "<space>",
+    "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[yaml]": {
+      "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "cmake.configureOnOpen": true,
+    "[python]": {
+
+      "gitlens.codeLens.symbolScopes": [
+        "!Module"
+      ],
+      "editor.formatOnType": true
+    },
+    "files.watcherExclude": {
+      "**/.bloop": true,
+      "**/.metals": true,
+      "**/.ammonite": true
+    },
+    "[ruby]": {
+      "editor.defaultFormatter": "Shopify.ruby-lsp",
+      "editor.formatOnSave": true,
+      "editor.formatOnType": true,
+      "editor.tabSize": 2,
+      "editor.insertSpaces": true,
+      "editor.semanticHighlighting.enabled": true
+    },
+    "byesig.fold": false,
+    "byesig.enabled": true,
+    "byesig.opacity": 0.5,
+    "byesig.showIcon": false,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "editor.rulers": [
+      120
+    ],
+    "git.openRepositoryInParentFolders": "never",
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[markdown]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.enableConfigurationSquiggles": false,
+    "[cpp]": {
+
+    },
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "clangd.fallbackFlags": [
+      "-D_LIBCPP_STD_VER=17",
+      "-U_LIBCPP_CXX03_LANG",
+      "--std=c++17"
+    ],
+    "extensions.experimental.affinity": {
+      "asvetliakov.vscode-neovim": 1
+    }
+}
