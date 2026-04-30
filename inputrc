@@ -1,0 +1,27 @@
+# for Bash history completion
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+set show-all-if-ambiguous on
+set completion-ignore-case on
+
+# Ctrl+Left/Right to move by whole words.
+"\e[1;5C": forward-word
+"\e[1;5D": backward-word
+
+
+
+# I find it is hard to understand the ANSI escape code
+# And somehow tmux makes it even harder
+# so I decide to make it more emacs like
+# I learn below command from `man readline`.
+Meta-b: backward-word
+Meta-f: forward-word
+
+# I tried to use control-f/b but it C-b 
+# does not work well inside Tmux as 
+# C-b is its control prefix.
+# So I follow this post https://unix.stackexchange.com/questions/539610/how-to-set-readline-key-bindings-using-alt-meta-or-some-other-control-key-as-p
+# to use option key as Meta key in iTerm2.
+#
+# Control-f: forward-word
+# Control-b: backward-word
